@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Humayra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="nav">
+        <div class="brand">Humayra</div>
+        <div class="nav-note">Private dedication</div>
+      </header>
+
+      <main>
+        <section class="hero scroll-section">
+          <p class="eyebrow">A quiet corner</p>
+          <h1>Grace, calm, and a rare kind of light.</h1>
+          <p class="lede">Simple, warm, and made to feel timeless.</p>
+          <div class="hero-actions">
+            <a class="ghost scroll-hint" href="#interactive">Scroll to explore</a>
+          </div>
+        </section>
+
+        <section id="interactive" class="interactive scroll-section">
+          <div class="content-block">
+            <h2>A small note</h2>
+            <p>Write something you want to keep.</p>
+          </div>
+          <div class="interactive-card">
+            <textarea
+              id="memory-text"
+              maxlength="180"
+              placeholder="Write a line you'd like to keep..."
+            ></textarea>
+            <div class="form-row">
+              <button id="save-memory" class="primary">Save memory</button>
+              <span id="memory-count" class="char-count">0 / 180</span>
+            </div>
+            <div id="memory-display" class="memory-display">
+              Your saved note will appear here.
+            </div>
+          </div>
+        </section>
+
+        <section class="highlights scroll-section">
+          <div class="content-block">
+            <h2>Little details</h2>
+            <p>Small things that feel special.</p>
+          </div>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h3>Presence</h3>
+              <p>Quiet confidence and calm energy.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Grace</h3>
+              <p>Thoughtful and easy to be around.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Warmth</h3>
+              <p>Kindness that stays with you.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="reveal" class="reveal scroll-section">
+          <div class="reveal-card">
+            <p class="reveal-question">
+              Wanna know who I think is the most beautiful girl I've ever seen?
+              Tap below.
+            </p>
+            <button
+              id="reveal-btn"
+              class="primary"
+              aria-expanded="false"
+              aria-controls="reveal-frame"
+            >
+              Show me
+            </button>
+            <div id="reveal-frame" class="reveal-frame" aria-live="polite">
+              <img
+                id="reveal-photo"
+                src="her-photo (2).jpg"
+                alt="Her photo"
+                loading="lazy"
+              />
+              <span class="reveal-placeholder">Your photo appears here.</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">Made with quiet affection.</footer>
+    </div>
+
+    <div class="ambient" aria-hidden="true"></div>
+    <div class="celebration" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
